@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDADBDD"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基本信息"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用  户  名"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="字母、数字或“_”,6-30位"
+        android:textColorHint="#FFD5CFCF"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/user_name" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="密       码"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/user_name"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="不少于6位"
+        android:textColorHint="#FFD5CFCF"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/user_name"
+        android:layout_toEndOf="@+id/user_name" />
+
+    <TextView
+        android:id="@+id/password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码确认"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/password" />
+
+    <EditText
+        android:id="@+id/edit_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请再次输入密码"
+        android:textColorHint="#FFD5CFCF"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/edit_password"
+        android:layout_toRightOf="@+id/password2" />
+
+    <TextView
+        android:id="@+id/detailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详细信息"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/password2"
+        android:layout_alignParentStart="true"
+       />
+
+    <TextView
+        android:id="@+id/realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="真实姓名"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/withe"
+        android:layout_alignTop="@+id/edit_realname"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edit_realname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入真实姓名，方便购票"
+        android:textColorHint="#FFD5CFCF"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/detailInfo"
+        android:layout_toRightOf="@+id/realname" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="证件类型"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/edit_type" />
+    <TextView
+        android:id="@+id/edit_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="二代身份证"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/edit_realname"
+        android:layout_toEndOf="@+id/realname"
+        android:singleLine="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="证件号码"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/type"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edit_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请准确完整填写"
+        android:textColorHint="#FFD5CFCF"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/edit_type"
+        android:layout_toRightOf="@+id/card_number" />
+
+    <TextView
+        android:id="@+id/connectInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系方式"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/card_number"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="证件号码"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/connectInfo"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请准确填写手机号码"
+        android:textColorHint="#FFD5CFCF"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/connectInfo"
+        android:layout_toRightOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电子邮件"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/phone"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请准确填写电子邮件"
+        android:textColorHint="#FFD5CFCF"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/edit_phone"
+        android:layout_toRightOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/addInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="附加信息"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/person_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旅客类型"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/addInfo" />
+    <TextView
+        android:id="@+id/edit_person_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成人"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/addInfo"
+        android:layout_toRightOf="@+id/person_type"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:text=" 下一步 "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/person_type"/>
+
+</RelativeLayout>
+
+</ScrollView>
